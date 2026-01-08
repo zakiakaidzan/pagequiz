@@ -4,7 +4,35 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ngaos - Kuis Tajwid Interaktif</title>
+
+<meta name="theme-color" content="#ffffff" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<!-- TODO: Set the document title to the name of your application -->
+<title>Ngaos – Quiz Belajar Tajwid Online Interaktif & Mudah</title>
+<meta name="description"
+	content="Ngaos adalah website quiz belajar tajwid online yang interaktif dan mudah dipahami. Tingkatkan pemahaman hukum tajwid Al-Qur'an dengan latihan soal seru dan edukatif." />
+<meta name="author" content="Ngaos" />
+<!-- Open Graph (Facebook, WhatsApp, dll) -->
+<meta property="og:title" content="Ngaos – Quiz Belajar Tajwid Online Interaktif" />
+<meta property="og:description"
+	content="Belajar tajwid Al-Qur'an jadi lebih mudah dengan quiz online interaktif di Ngajiin. Cocok untuk pemula hingga mahir." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://api.imghippo.com/files/nRk4446tE.png" />
+<meta property="og:url" content="https://ngoas.xyz" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ngaos – Quiz Belajar Tajwid Online" />
+<meta name="twitter:description"
+	content="Website quiz belajar tajwid Al-Qur'an yang interaktif, praktis, dan mudah dipahami untuk semua kalangan." />
+<meta name="twitter:image" content="https://api.imghippo.com/files/nRk4446tE.png" />
+
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Ngaos" />
+<link rel="manifest" href="/favicon/site.webmanifest" />
 
 	<!-- Bootstrap 5 CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -611,24 +639,29 @@
 <body>
 
 	<!-- Navigation -->
+	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
 		<div class="container">
 			<!-- Logo Diganti Gambar -->
 			<a class="navbar-brand" href="#">
-				<img src="https://quiz.ngaos.xyz/assets/logo-qobil-CNSL0u07.png" alt="Ngaos Logo" style="height: 50px; width: auto;">
-            </a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+				<img src="https://quiz.ngaos.xyz/assets/logo-qobil-CNSL0u07.png" alt="Ngaos Logo" style="height: 55px; width: auto;" class="mx-2 mx-lg-0">
+	            </a>
+	
+				<!-- Tombol Login Mobile (Muncul setelah Scroll) -->
+				<!-- Tambah class 'd-none' agar awal tersembunyi, dan ID 'mobileStickyLogin' untuk JS -->
+				<a href="https://quiz.ngaos.xyz" id="mobileStickyLogin" class="btn-gamified btn-green btn-sm d-lg-none d-none ms-auto"
+					style="color: white !important;">Mulai</a>
+	
+				<!-- Navbar Toggler DIHAPUS -->
+	
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto align-items-center">
 						<li class="nav-item"><a class="nav-link" href="#materi">Materi</a></li>
 						<li class="nav-item"><a class="nav-link" href="#cara-kerja">Cara Belajar</a></li>
 						<li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
 						<li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-							<!-- Login Button Green -->
-							<a href="#" class="btn-gamified btn-green btn-login"
-								style="color:white !important;">Login</a>
+							<!-- Login Button Desktop/Menu -->
+							<a href="https://quiz.ngaos.xyz" class="btn-gamified btn-green btn-login" style="color:white !important;">Login</a>
 						</li>
 					</ul>
 				</div>
@@ -661,7 +694,7 @@
 						<a href="https://quiz.ngaos.xyz" class="btn-gamified btn-green fs-5 px-4 py-3">
 							MULAI QUIZ
 						</a>
-						<a href="#" class="btn-gamified btn-white fs-5 px-4 py-3">
+						<a href="#materi" class="btn-gamified btn-white fs-5 px-4 py-3">
 							LIHAT MATERI
 						</a>
 					</div>
@@ -702,11 +735,11 @@
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-6 col-md-3 stat-item">
-					<h2 class="fw-bolder mb-0 text-white">500+</h2>
+					<h2 class="fw-bolder mb-0 text-white">100+</h2>
 					<small class="text-white opacity-75 fw-bold text-uppercase ls-1">Soal Kuis</small>
 				</div>
 				<div class="col-6 col-md-3 stat-item">
-					<h2 class="fw-bolder mb-0 text-white">10rb+</h2>
+					<h2 class="fw-bolder mb-0 text-white">5rb+</h2>
 					<small class="text-white opacity-75 fw-bold text-uppercase ls-1">Siswa Belajar</small>
 				</div>
 				<div class="col-6 col-md-3 mt-4 mt-md-0 stat-item">
@@ -715,7 +748,7 @@
 				</div>
 				<div class="col-6 col-md-3 mt-4 mt-md-0">
 					<h2 class="fw-bolder mb-0 text-white">4.8</h2>
-					<small class="text-white opacity-75 fw-bold text-uppercase ls-1">Rating App</small>
+					<small class="text-white opacity-75 fw-bold text-uppercase ls-1">Rating</small>
 				</div>
 			</div>
 		</div>
@@ -863,7 +896,7 @@
 						<div
 							class="d-flex gap-3 justify-content-center justify-content-lg-start flex-column flex-sm-row">
 							<a href="#" class="btn-gamified btn-green fs-5 px-5 py-3 shadow-lg border-0">
-								DAFTAR GRATIS
+								MULAI BELAJAR
 							</a>
 						</div>
 					</div>
@@ -1030,6 +1063,25 @@
             }
         });
 	</script>
+<!-- Custom JS -->
+<script>
+	// Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNav');
+            const mobileBtn = document.getElementById('mobileStickyLogin');
+            const scrollThreshold = 100; // Mulai berubah setelah scroll 100px
+
+            if (window.scrollY > scrollThreshold) {
+                navbar.classList.add('scrolled');
+                // Show mobile login button only after scrolling past threshold
+                if (mobileBtn) mobileBtn.classList.remove('d-none');
+            } else {
+                navbar.classList.remove('scrolled');
+                // Hide mobile login button when at top
+                if (mobileBtn) mobileBtn.classList.add('d-none');
+            }
+        });
+</script>
 </body>
 
 </html>
