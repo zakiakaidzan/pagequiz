@@ -1078,16 +1078,13 @@
 	<script>
 		// Navbar scroll effect
         window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('mainNav');
             const mobileBtn = document.getElementById('mobileStickyLogin');
-            const scrollThreshold = 230; // Mulai berubah setelah scroll 100px
+            const scrollThreshold = 400; // Mulai berubah setelah scroll 100px
 
             if (window.scrollY > scrollThreshold) {
-                navbar.classList.add('scrolled');
                 // Show mobile login button only after scrolling past threshold
                 if (mobileBtn) mobileBtn.classList.remove('d-none');
             } else {
-                navbar.classList.remove('scrolled');
                 // Hide mobile login button when at top
                 if (mobileBtn) mobileBtn.classList.add('d-none');
             }
